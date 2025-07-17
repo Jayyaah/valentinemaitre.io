@@ -18,7 +18,7 @@ window.onload = () => {
   typeChar();
 
   document.getElementById("btnParcours").onclick = () => {
-    window.location.href = "parcours.html";
+    window.location.href = "about.html";
   };
   document.getElementById("btnProjets").onclick = () => {
     window.location.href = "projets.html";
