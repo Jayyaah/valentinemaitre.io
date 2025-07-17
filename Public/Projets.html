@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projets - Valentine Maître</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Valentine M.</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link" href="../../../Downloads/Perso/parcours.html">Parcours</a></li>
+          <li class="nav-item"><a class="nav-link active" href="projets.html">Projets</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container py-5">
+    <h1 class="mb-5 text-center fw-bold">Mes Projets de Développement</h1>
+		<div class="row g-4">
+		  <!-- GamePicker -->
+		  <div class="col-md-6 col-lg-4">
+			<div class="card h-100 shadow-sm border-0 rounded-4" style="animation-delay: 0.1s;">
+			  <div class="card-body">
+				<h5 class="card-title">🎮 GamePicker</h5>
+				<p class="card-text">
+				  Application web en PHP/MySQL pour gérer ta bibliothèque de jeux vidéo et en choisir un au hasard. 
+				  Ajout, filtrage par plateforme, et tirage aléatoire. Interface HTML/CSS simple et efficace.
+				</p>
+				<a href="https://github.com/Jayyaah/rand" class="btn btn-outline-dark rounded-pill" target="_blank">Voir sur GitHub</a>
+			  </div>
+			</div>
+		  </div>
+
+		  <!-- EasyTravel -->
+			<div class="col-md-6 col-lg-4 mb-4">
+			  <div class="card shadow-sm border-0 rounded-4 h-100 d-flex flex-column">
+				<div class="card-body">
+				  <div class="d-flex align-items-center mb-3">
+					<img src="img/easytravel-logo.png" alt="Logo EasyTravel" style="height: 32px;" class="me-2">
+					<h5 class="card-title mb-0 fw-semibold">EasyTravel</h5>
+				  </div>
+				  <p class="card-text text-muted small">
+					Prototype iOS pour découvrir des destinations selon tes préférences. Réalisé en SwiftUI avec quiz, fiches détaillées et liens vers vols & hébergements.
+				  </p>
+				  <a href="https://github.com/Jayyaah/EasyTravel" class="btn btn-outline-dark btn-sm rounded-pill" target="_blank">
+					<i class="bi bi-github me-1"></i> Voir sur GitHub
+				  </a>
+				</div>
+
+				<div id="carouselEasyTravel" class="carousel slide rounded-bottom-4 overflow-hidden" data-bs-ride="carousel">
+				  <div class="carousel-inner">
+					<div class="carousel-item active">
+					  <img src="img/easytravel-capture.png" class="d-block w-100" alt="Capture 1">
+					</div>
+					<div class="carousel-item">
+					  <img src="img/easytravel-capture.png" class="d-block w-100" alt="Capture 2">
+					</div>
+					<div class="carousel-item">
+					  <img src="img/easytravel-capture.png" class="d-block w-100" alt="Capture 3">
+					</div>
+				  </div>
+				  <button class="carousel-control-prev" type="button" data-bs-target="#carouselEasyTravel" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" style="filter: invert(0.7);"></span>
+				  </button>
+				  <button class="carousel-control-next" type="button" data-bs-target="#carouselEasyTravel" data-bs-slide="next">
+					<span class="carousel-control-next-icon" style="filter: invert(0.7);"></span>
+				  </button>
+				</div>
+			  </div>
+			</div>
+
+		  <!-- Passe P'Art Où -->
+		  <div class="col-md-6 col-lg-4">
+			<div class="card h-100 shadow-sm border-0 rounded-4" style="animation-delay: 0.1s;">
+			  <div class="card-body">
+				<h5 class="card-title">🎨 Passe P'Art Où !</h5>
+				<p class="card-text">
+				  Prototype d’app iOS inspirée de Pokémon Go. Explore des lieux culturels sur une carte interactive, accomplis des missions, gagne des récompenses et personnalise ton interface.
+				</p>
+				<a href="https://github.com/Jayyaah/Passe-P-ARTtout" class="btn btn-outline-dark rounded-pill" target="_blank">Voir sur GitHub</a>
+			  </div>
+			</div>
+		  </div>
+
+		  <!-- Portfolio Symfony -->
+		  <div class="col-md-6 col-lg-4">
+			<div class="card h-100 shadow-sm border-0 rounded-4" style="animation-delay: 0.1s;">
+			  <div class="card-body">
+				<h5 class="card-title">🖥️ Portfolio Symfony</h5>
+				<p class="card-text">
+				  Site vitrine personnel développé avec Symfony, Twig et animations JS. Présente mes projets, mon parcours et un formulaire de contact. Design fluide, inspiré Apple.
+				</p>
+				<a href="https://github.com/Jayyaah/Portfolio.git" class="btn btn-outline-dark rounded-pill" target="_blank">Voir sur GitHub</a>
+			  </div>
+			</div>
+		  </div>
+		</div>
+  </main>
+
+  <footer class="text-center py-3">
+    © 2025 Valentine Maître | Portfolio personnel
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
