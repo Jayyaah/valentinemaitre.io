@@ -21,6 +21,6 @@ window.onload = () => {
     window.location.href = "about.html";
   };
   document.getElementById("btnProjets").onclick = () => {
-    window.location.href = "projets.html";
+    window.location.href = "projects.html";
   };
 };
