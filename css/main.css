@@ -177,6 +177,18 @@ nav .nav-link:hover {
   border: 1px solid #ddd;
 }
 
+/* Contact */
+.contact {
+	flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background: linear-gradient(145deg, #f8f9fa, #ffffff);
+  animation: fadeIn 1s ease forwards;
+}
+
 /* footer */
 footer {
   text-align: center;
