@@ -4,41 +4,47 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Valentine Maître - Accueil</title>
-  <!-- <link rel = "icon" type = "image/png" href = "img/VM.png"> -->
+  <!-- <link rel="icon" type="image/png" href="img/VM.png"> -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css" />
 </head>
 <body>
-	<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
-	  <div class="container d-flex">
-		<button class="navbar-toggler me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-		  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-		  <span class="navbar-toggler-icon"></span>
-		</button>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container d-flex">
+      <button class="navbar-toggler me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-		<div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-		  <ul class="navbar-nav">
-			<li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
-			<li class="nav-item"><a class="nav-link" href="about.html">Parcours</a></li>
-			<li class="nav-item"><a class="nav-link" href="projects.html">Projets</a></li>
-			<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-		  </ul>
-		</div>
-	  </div>
-	</nav>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">Parcours</a></li>
+          <li class="nav-item"><a class="nav-link" href="projects.html">Projets</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
+  <main class="home container-fluid text-center py-5 position-relative">
+  <div class="typing-wrapper">
+    <h1 class="mb-0"> 
+      <div class="typed-text" id="typedText">
+        <span id="textContent"></span><span class="cursor"></span>
+      </div>
+    </h1>
 
-  <main class="home container-fluid text-center py-5">
-    <h1>Bonjour, je suis Valentine Maître</h1>
-    <p>Technicienne support & développeuse Swift passionnée par l'univers Apple</p>
-    <div class="typed-text" id="typedText"><span id="textContent"></span><span class="cursor"></span></div>
-
-    <div id="actionButtons" style="margin-top: 30px; display: none;">
-      <button id="btnParcours" class="btn btn-outline-dark me-3">Mon parcours</button>
-      <button id="btnProjets" class="btn btn-outline-dark">Mes projets</button>
+      <div id="actionDisplay" class="fade-target">
+        <p>Technicienne support & développeuse Swift passionnée par l'univers Apple</p>
+        <p>Je suis passionnée par la création d'applications fluides, esthétiques et utiles. J'aime explorer l'écosystème Apple, concevoir des interfaces soignées et apprendre en continu de nouvelles technologies. Ce portfolio est une extension de mon univers, mêlant technique et design.</p>
+        <button id="btnParcours" class="btn btn-outline-dark me-3">Mon parcours</button>
+        <button id="btnProjets" class="btn btn-outline-dark">Mes projets</button>
+      </div>
     </div>
   </main>
+
 
   <footer class="text-center py-3">
     © 2025 Valentine Maître | Portfolio personnel

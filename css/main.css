@@ -63,15 +63,33 @@ nav .nav-link:hover {
 
 /* Typing animation */
 .typed-text {
-  font-size: 1.1rem;
+  font-size: 3rem;
   margin-top: 2rem;
   color: #333;
   max-width: 700px;
   padding: 0 1rem;
-  font-style: italic;
-  white-space: pre-wrap;
+  white-space: nowrap;
   animation: fadeIn 1.5s ease forwards;
-  min-height: 60px;
+  display: inline-block;
+}
+
+.typing-wrapper {
+  min-height: 300px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+}
+
+#actionDisplay p:first-of-type {
+  margin-top: 0rem;  /* Réduit l'espace entre le texte tapé et le poste */
+  margin-bottom: 1rem; /* Espace entre le poste et la description */
+}
+
+#actionDisplay p:nth-of-type(2) {
+  margin-bottom: 1rem;
 }
 
 .cursor {
@@ -80,8 +98,25 @@ nav .nav-link:hover {
   background-color: #333;
   animation: blink 0.8s steps(2, start) infinite;
   margin-left: 2px;
-  height: 1.1rem;
+  height: 2.5rem;
   vertical-align: middle;
+}
+
+/*fade*/
+.fade-target {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  min-height: 120px;
+}
+
+.fade-target.show {
+  opacity: 1;
+}
+
+.fade-in {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 @keyframes blink {
@@ -128,7 +163,7 @@ nav .nav-link:hover {
 .card img {
   max-height: 180px;
   object-fit: cover;
-  width: 100%;
+  width: 30%;
   border-bottom-left-radius: .5rem;
   border-bottom-right-radius: .5rem;
   display: block;
@@ -179,7 +214,7 @@ nav .nav-link:hover {
 
 /* Contact */
 .contact {
-	flex: 1;
+  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -187,6 +222,17 @@ nav .nav-link:hover {
   padding: 2rem;
   background: linear-gradient(145deg, #f8f9fa, #ffffff);
   animation: fadeIn 1s ease forwards;
+}
+
+/*Logo société*/
+.logo-img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.d-flex.align-items-center.mb-2 {
+  justify-content: flex-start;
 }
 
 /* footer */

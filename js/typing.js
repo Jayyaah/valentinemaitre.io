@@ -1,6 +1,6 @@
-const text = "Je suis passionnée par la création d'applications fluides, esthétiques et utiles. J'aime explorer l'écosystème Apple, concevoir des interfaces soignées et apprendre en continu de nouvelles technologies. Ce portfolio est une extension de mon univers, mêlant technique et design.";
+const text = "Bonjour, je suis Valentine Maître";
 const textContent = document.getElementById("textContent");
-const actionButtons = document.getElementById("actionButtons");
+const actionDisplay = document.getElementById("actionDisplay");
 let index = 0;
 
 function typeChar() {
@@ -10,7 +10,7 @@ function typeChar() {
     setTimeout(typeChar, 70);
   } else {
     console.log("Texte terminé, affichage boutons...");
-    actionButtons.style.display = "block";
+    actionDisplay.classList.add("show"); // déclenche l’opacité en fondu
   }
 }
 
