@@ -149,6 +149,7 @@ nav .nav-link:hover {
   font-weight: 600;
   color: #1d1d1f;
   font-size: 1.1rem;
+  margin-bottom: 0.5rem;
 }
 .card-text {
   font-weight: 300;
@@ -161,9 +162,10 @@ nav .nav-link:hover {
   flex-direction: column;
 }
 .card img {
-  max-height: 180px;
+  aspect-ratio: 1/1;
   object-fit: cover;
-  width: 30%;
+  width: 50%;
+  max-height: 180px;
   border-bottom-left-radius: .5rem;
   border-bottom-right-radius: .5rem;
   display: block;
@@ -225,14 +227,69 @@ nav .nav-link:hover {
 }
 
 /*Logo société*/
-.logo-img {
-  width: 40px;
-  height: 40px;
-  object-fit: contain;
+.logo-wrapper {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
 }
 
 .d-flex.align-items-center.mb-2 {
   justify-content: flex-start;
+}
+
+/* Modale style Apple */
+.modal-content {
+  border: none;
+  border-radius: 2rem;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+  background-color: #fefefe;
+  padding: 2rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.modal-header {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.modal-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1d1d1f;
+}
+
+.modal-body {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+  padding-top: 1rem;
+}
+
+.modal-body p {
+  margin-bottom: 1.2rem;
+}
+
+.modal-body ul {
+  padding-left: 1rem;
+  list-style: none;
+}
+
+.modal-body ul li {
+  margin-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.modal-body ul li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #0071e3;
+  font-weight: bold;
 }
 
 /* footer */
