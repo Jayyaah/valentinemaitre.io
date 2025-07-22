@@ -62,25 +62,33 @@ nav .nav-link:hover {
 }
 
 /* Typing animation */
-.typed-text {
-  font-size: 3rem;
-  margin-top: 2rem;
-  color: #333;
-  max-width: 700px;
-  padding: 0 1rem;
-  white-space: nowrap;
-  animation: fadeIn 1.5s ease forwards;
-  display: inline-block;
-}
-
 .typing-wrapper {
-  min-height: 300px; 
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  position: relative;
   text-align: center;
+  padding: 2rem;
+  min-height: auto; /* au lieu de 300px rigide */
+  width: 100%;
+}
+
+.typed-text {
+  font-size: 3rem;
+  color: #333;
+  max-width: 100%;
+  padding: 0 1rem;
+  white-space: normal; /* important pour qu'il s'adapte */
+  word-break: break-word; /* si besoin sur petits écrans */
+  line-height: 1.4;
+  display: inline-block;
+  animation: fadeIn 1.5s ease forwards;
+}
+
+@media (max-width: 576px) {
+  .typed-text {
+    font-size: 1.4rem;
+  }
 }
 
 #actionDisplay p:first-of-type {
@@ -237,6 +245,14 @@ nav .nav-link:hover {
   justify-content: flex-start;
   margin-top: 0rem;
   margin-bottom: 0rem;
+}
+
+.logo-img {
+  max-width: 100%;
+  max-height: 60px; /* ou la hauteur souhaitée */
+  object-fit: contain;
+  display: block;
+  margin-top: 0.5rem;
 }
 
 .d-flex.align-items-center.mb-2 {
