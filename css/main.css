@@ -184,10 +184,12 @@ nav .nav-link:hover {
 
 /* carousel */
 .carousel-inner img {
-  max-height: 240px;
-  object-fit: cover;
-  transition: transform 0.3s ease;
+  object-fit: contain;
+  height: 400px; 
+  width: 100%;
+  background-color: #f8f9fa;
 }
+
 .carousel-inner img:hover {
   transform: scale(1.01);
   cursor: pointer;
