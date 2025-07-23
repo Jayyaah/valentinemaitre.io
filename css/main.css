@@ -68,32 +68,31 @@ nav .nav-link:hover {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 2rem;
-  min-height: auto; /* au lieu de 300px rigide */
+  padding: 2rem 1rem;
   width: 100%;
+  max-width: 100vw;
+  overflow-wrap: break-word;
 }
 
 .typed-text {
   font-size: 3rem;
   color: #333;
-  max-width: 100%;
-  padding: 0 1rem;
-  white-space: normal; /* important pour qu'il s'adapte */
-  word-break: break-word; /* si besoin sur petits écrans */
+  white-space: normal;
+  word-break: break-word;
   line-height: 1.4;
-  display: inline-block;
+  display: block;
   animation: fadeIn 1.5s ease forwards;
 }
 
 @media (max-width: 576px) {
   .typed-text {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
 }
 
 #actionDisplay p:first-of-type {
-  margin-top: 0rem;  /* Réduit l'espace entre le texte tapé et le poste */
-  margin-bottom: 1rem; /* Espace entre le poste et la description */
+  margin-top: 0rem;  
+  margin-bottom: 1rem; 
 }
 
 #actionDisplay p:nth-of-type(2) {
