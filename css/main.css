@@ -235,6 +235,22 @@ nav .nav-link:hover {
   animation: fadeIn 1s ease forwards;
 }
 
+#formResponseWrapper {
+  height: 4rem;
+  padding-top: 1rem;
+}
+
+#formResponse {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+#formResponse.visible {
+  visibility: visible;
+  opacity: 1;
+}
+
 /*Logo société*/
 .logo-wrapper {
   width: 100px;
