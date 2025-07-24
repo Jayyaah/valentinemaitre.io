@@ -29,7 +29,7 @@ nav .nav-link {
   transition: color 0.3s ease;
 }
 nav .nav-link:hover {
-  color: #0071e3;
+  color: #007aff;
 }
 
 /* home section */
@@ -169,24 +169,35 @@ nav .nav-link:hover {
   flex-direction: column;
 }
 .card img {
-  aspect-ratio: 1/1;
-  object-fit: cover;
-  width: 50%;
-  max-height: 180px;
-  border-bottom-left-radius: .5rem;
-  border-bottom-right-radius: .5rem;
-  display: block;
-  margin-top: auto;
+  width: auto;
+  height: 28px;
+} 
+
+/*Apple button blue*/
+.apple-button-blue:hover {
+  background-color: #0066d6;
+  box-shadow: 0 4px 10px rgba(0, 122, 255, 0.3);
 }
 
-/* buttons */
+/*button blue*/
+.apple-button-blue {
+  border-color: #007aff;
+  color: #007aff;
+}
+.apple-button-blue:hover {
+  background-color: #007aff;
+  color: #fff;
+}
+
+/*button dark*/
 .btn-outline-dark {
   border-color: #1d1d1f;
   color: #1d1d1f;
 }
 .btn-outline-dark:hover {
-  background-color: #000;
+  background-color: #007aff;
   color: #fff;
+  border-color: #007aff;
 }
 
 /* carousel */

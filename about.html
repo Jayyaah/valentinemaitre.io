@@ -4,191 +4,322 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Parcours - Valentine Maître</title>
-  <!-- <link rel = "icon" type = "image/png" href = "img/VM.png"> -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
   <link rel="stylesheet" href="css/main.css" />
 </head>
 <body>
-	<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
-	  <div class="container d-flex">
-		<button class="navbar-toggler me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-		  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-		  <span class="navbar-toggler-icon"></span>
-		</button>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container d-flex">
+      <button class="navbar-toggler me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">Parcours</a></li>
+          <li class="nav-item"><a class="nav-link" href="projects.html">Projets</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-		<div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-		  <ul class="navbar-nav">
-			<li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
-			<li class="nav-item"><a class="nav-link" href="about.html">Parcours</a></li>
-			<li class="nav-item"><a class="nav-link" href="projects.html">Projets</a></li>
-			<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-		  </ul>
-		</div>
-	  </div>
-	</nav>
-<main class="container py-5">
-	<h1 class="mb-5 fw-bold">Mon Parcours Professionnel et Scolaire</h1>
-	<section id="career">
-		<h2>Parcours Professionnel</h2>
-		<div class="row g-4">
-			<div class="col-md-6 col-lg-4">
-				<div class="card h-100 shadow-sm border-0 rounded-4 d-flex flex-column">
-					<div class="card-body d-flex flex-column">
-						<h5 class="card-title">
-						Technicienne Support Applicatif
-						</h5>
-						<img src="img/derijke-logo.png" alt="Logo DeRijke" class="logo-img mb-2">
-						<p class="card-text flex-grow-1">
-							<small>06/23 - aujourd'hui</small>
-						</p>
-						<div class="d-flex justify-content-between align-items-center">
-							<a href="#" class="btn btn-outline-dark btn-sm" data-bs-toggle="modal" data-bs-target="#modalDerijke">En savoir plus</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-6 col-lg-4">
-				<div class="card h-100 shadow-sm border-0 rounded-4 d-flex flex-column">
-					<div class="card-body d-flex flex-column">
-						<h5 class="card-title">
-						Technicienne Support Applicatif N2
-						</h5>
-						<div class="logo-wrapper mb-2">
-						<img src="img/sacem-logo.png" alt="Logo SACEM" class="logo-img">
-						</div>
-						<p class="card-text flex-grow-1">
-							<small>09/19 - 08/21</small>
-						</p>
-						<div class="d-flex justify-content-between align-items-center">
-							<a href="#" class="btn btn-outline-dark btn-sm" data-bs-toggle="modal" data-bs-target="#modalSacem">En savoir plus</a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-6 col-lg-4">
-				<div class="card h-100 shadow-sm border-0 rounded-4 d-flex flex-column">
-					<div class="card-body d-flex flex-column">
-						<h5 class="card-title">
-						Développeuse Web</br>
-						</h5>
-						<div class="logo-wrapper mb-2">
-							<img src="img/ratp-logo.png" alt="Logo RATP" class="logo-img">
-						</div>
-						<p class="card-text flex-grow-1">
-							<small>05/18 - 07/18</small>
-						</p>
-						<div class="d-flex justify-content-between align-items-center">
-							<a href="#" class="btn btn-outline-dark btn-sm" data-bs-toggle="modal" data-bs-target="#modalRatp">En savoir plus</a>
-						</div>
-					</div>
-				</div>
-			</div>
-	</section>
-	</br >
-	<section id="school-career">
-	<h2>Parcours Scolaire</h2>
-		<div class="row g-4">
+  <main class="container py-5">
+    <h1 class="mb-5 fw-bold">Mon Parcours</h1>
+    <div class="row g-4">
 
-			<div class="col-md-6 col-lg-4">
-				<div class="card h-100 shadow-sm border-0 rounded-4 d-flex flex-column">
-					<div class="card-body d-flex flex-column">
-						<h5 class="card-title">
-						ESGI - Bachelor Ingénerie du web
-						</h5>
-						<p class="card-text flex-grow-1">
-							<small>09/19 - 07/20</small>
-						</p>
-						<div>
-							<a href="#" class="btn btn-outline-dark btn-sm" data-bs-toggle="modal" data-bs-target="#modalRatp">En savoir plus</a>
-						</div>
-					</div>
-				</div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm border-0 rounded-4 d-flex flex-column">
+          <div class="card-body d-flex flex-column">
+            <span class="text-muted small mb-1">💼 Expérience</span>
+            <h5 class="card-title mb-1">Technicienne Support Applicatif</h5>
+            <small class="text-muted">DE RIJKE</small>
+            <p class="card-text"><small>06/23 - aujourd'hui</small></p>
+            <p class="card-text flex-grow-1 small">
+              Gestion des demandes, adaptation de l’outil, accompagnement des utilisateurs.
+            </p>
+            <div class="d-flex justify-content-between align-items-center mt-auto">
+              <a href="#" class="btn btn-outline-dark btn-sm" data-bs-toggle="modal" data-bs-target="#modalDerijke">En savoir plus</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+		<div class="col-md-6 col-lg-4">
+		  <div class="card h-100 shadow-sm border-0 rounded-4 d-flex flex-column">
+			<div class="card-body d-flex flex-column">
+			  <span class="text-muted small mb-1">🎓 Formation</span>
+			  <h5 class="card-title mb-1">Apple Foundation Program</h5>
+			  <small class="text-muted">Simplon Grand Ouest</small>
+			  <p class="card-text"><small>11/22 - 03/23</small></p>
+			  <p class="card-text flex-grow-1 small">
+				Formation intensive en développement mobile iOS, UX design et prototypage.
+			  </p>
+			  <div class="d-flex justify-content-between align-items-center mt-auto">
+				<a href="#" class="btn btn-outline-dark btn-sm" data-bs-toggle="modal" data-bs-target="#modalSimplon">En savoir plus</a>
+			  </div>
 			</div>
-			
-			
+		  </div>
 		</div>
-	</section>
-</main>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm border-0 rounded-4 d-flex flex-column">
+          <div class="card-body d-flex flex-column">
+            <span class="text-muted small mb-1">💼 Expérience</span>
+            <h5 class="card-title mb-1">Technicienne Support Applicatif N2</h5>
+            <small class="text-muted">SACEM</small>
+            <p class="card-text"><small>09/19 - 08/21</small></p>
+            <p class="card-text flex-grow-1 small">
+              Support EasyVista, administration, dashboards, migration SaaS, formation utilisateurs.
+            </p>
+            <div class="d-flex justify-content-between align-items-center mt-auto">
+              <a href="#" class="btn btn-outline-dark btn-sm" data-bs-toggle="modal" data-bs-target="#modalSacem">En savoir plus</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm border-0 rounded-4 d-flex flex-column">
+          <div class="card-body d-flex flex-column">
+            <span class="text-muted small mb-1">🎓 Formation</span>
+            <h5 class="card-title mb-1">Bachelor Ingénierie du Web - Admis</h5>
+            <small class="text-muted">ESGI</small>
+            <p class="card-text"><small>09/19 - 07/20</small></p>
+            <p class="card-text flex-grow-1 small">
+              Spécialisation en développement web, architecture logicielle, gestion de projet agile.
+            </p>
+            <div class="d-flex justify-content-between align-items-center mt-auto">
+              <a href="#" class="btn btn-outline-dark btn-sm" data-bs-toggle="modal" data-bs-target="#modalESGI">En savoir plus</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+		<div class="col-md-6 col-lg-4">
+		  <div class="card h-100 shadow-sm border-0 rounded-4 d-flex flex-column">
+			<div class="card-body d-flex flex-column">
+			  <span class="text-muted small mb-1">🎓 Formation</span>
+			  <h5 class="card-title mb-1">BTS Systèmes Numériques - Admis</h5>
+			  <small class="text-muted">Lycée Langevin Wallon</small>
+			  <p class="card-text"><small>09/17 - 07/19</small></p>
+			  <p class="card-text flex-grow-1 small">
+				Apprentissage du développement C/C++, Java, JS, projets robotiques et web.
+			  </p>
+			  <div class="d-flex justify-content-between align-items-center mt-auto">
+				<a href="#" class="btn btn-outline-dark btn-sm" data-bs-toggle="modal" data-bs-target="#modalBTS">En savoir plus</a>
+			  </div>
+			</div>
+		  </div>
+		</div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm border-0 rounded-4 d-flex flex-column">
+          <div class="card-body d-flex flex-column">
+            <span class="text-muted small mb-1">💼 Expérience</span>
+            <h5 class="card-title mb-1">Développeuse Web JAVA</h5>
+            <small class="text-muted">RATP</small>
+            <p class="card-text"><small>05/18 - 07/18</small></p>
+            <p class="card-text flex-grow-1 small">
+              Développement web en Java, ajout de modules, tests fonctionnels, paramétrage de l’IDE.
+            </p>
+            <div class="d-flex justify-content-between align-items-center mt-auto">
+              <a href="#" class="btn btn-outline-dark btn-sm" data-bs-toggle="modal" data-bs-target="#modalRatp">En savoir plus</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
 
   <footer class="text-center py-3">
     © 2025 Valentine Maître | Portfolio personnel
   </footer>
 
+  <!-- Modal Derijke -->
+  <div class="modal fade" id="modalDerijke" tabindex="-1" aria-labelledby="modalDerijkeLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content rounded-4">
+        <div class="modal-header border-0">
+          <img src="img/derijke-logo.png" alt="Logo DeRijke" style="height: 50px;" class="me-2">
+          <h5 class="modal-title fw-semibold" id="modalDerijkeLabel">Technicienne Support Applicatif</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+        </div>
+        <div class="modal-body px-4">
+          <ul>
+            <li>Gestion des demandes utilisateurs liées au TMS</li>
+            <li>Paramétrage et adaptation de l’outil selon les besoins métiers</li>
+            <li>Support fonctionnel et accompagnement des utilisateurs</li>
+            <li>Collaboration avec les équipes métiers pour optimiser les processus</li>
+          </ul>
+          <p><strong>🚀 Projets réalisés :</strong></p>
+          <ul>
+            <li>Dématérialisation des factures</li>
+            <li>Intégration d’une IA pour la saisie automatisée des commandes</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Sacem -->
+  <div class="modal fade" id="modalSacem" tabindex="-1" aria-labelledby="modalSacemLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content rounded-4">
+        <div class="modal-header border-0">
+          <h5 class="modal-title fw-semibold" id="modalSacemLabel">Technicienne Support Applicatif N2 - SACEM</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+        </div>
+        <div class="modal-body px-4">
+          <p><strong>📆 CDD - oct. 2020 - août 2021 (11 mois)</strong></p>
+          <ul>
+            <li>Administration des outils EasyVista (Manager, Apps)</li>
+            <li>Gestion des tickets incidents et demandes d’accès</li>
+            <li>Mise à jour vers EasyVista Oxygen (portails, dashboards)</li>
+            <li>Formation des utilisateurs</li>
+            <li>Suivi de la base de données et gestion des imports matériels</li>
+          </ul>
+          <p><strong>📆 Alternance - sept. 2019 - sept. 2020 (1 an)</strong></p>
+          <ul>
+            <li>Support niveau 2 sur EasyVista</li>
+            <li>Gestion des incidents, demandes de service et droits applicatifs</li>
+            <li>Passage de l’environnement EasyVista en mode SaaS</li>
+            <li>Création et modification de tableaux de bord et portails</li>
+            <li>Maintenance applicative et gestion de la base de données</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+	  </div>
+	  
+	 <!-- Modal Ratp -->
+	<div class="modal fade" id="modalRatp" tabindex="-1" aria-labelledby="modalRatpLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered modal-lg">
+		<div class="modal-content rounded-4">
+		  <div class="modal-header border-0">
+			<h5 class="modal-title fw-semibold" id="modalRatpLabel">Développeuse Web JAVA - RATP</h5>
+			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+		  </div>
+		  <div class="modal-body px-4">
+			<p><strong>📆 Stage</strong></p>
+			<ul>
+			  <li>Étude du cahier des charges pour développement web</li>
+			  <li>Ajout de modules et nouvelles fonctionnalités sur l’interface</li>
+			  <li>Paramétrage de l’IDE et tests fonctionnels</li>
+			  <li>Développement avec Java & HTML</li>
+			</ul>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	
+	
+	<!-- Modal ESGI -->
+	<div class="modal fade" id="modalESGI" tabindex="-1" aria-labelledby="modalESGILabel" aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered modal-lg">
+		<div class="modal-content rounded-4">
+		  <div class="modal-header border-0">
+			<h5 class="modal-title fw-semibold" id="modalESGILabel">🎓 Bachelor Ingénierie du Web - ESGI</h5>
+			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+		  </div>
+		  <div class="modal-body px-4">
+			<p><strong>📚 Activités annuelles :</strong><br>
+			Atelier d'ouverture, E-learning, Programme, Open ESGI, vie scolaire, stage ou mission en entreprise.</p>
+
+			<p><strong>🛠 Projet annuel :</strong><br>
+			- Création d'un CMS à partir de zéro</p>
+
+			<p><strong>🌐 Outils et environnement web :</strong></p>
+			<ul>
+			  <li>Docker</li>
+			  <li>Principes de base de Linux</li>
+			  <li>Outils de versionnement du code</li>
+			  <li>Sécurité du WEB</li>
+			  <li>Serveur web</li>
+			</ul>
+
+			<p><strong>💻 Technologies et frameworks Web :</strong></p>
+			<ul>
+			  <li>HTML5, CSS3, SCSS, jQuery</li>
+			  <li>PHP7 - MVC From Scratch (niveau 1)</li>
+			  <li>PHP7 - Avancé</li>
+			  <li>Laravel</li>
+			  <li>Panorama CMS</li>
+			  <li>SDK</li>
+			  <li>Ruby on Rails</li>
+			</ul>
+
+			<p><strong>🧠 Analyse, conception & gestion de projet :</strong></p>
+			<ul>
+			  <li>Conception web avec Figma</li>
+			  <li>Conception de bases de données relationnelles</li>
+			  <li>Méthodologie Agile</li>
+			</ul>
+
+			<p><strong>📢 Outils de communication :</strong></p>
+			<ul>
+			  <li>Identité numérique & entrepreneuriat</li>
+			  <li>Marketing numérique</li>
+			</ul>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	
+	<!-- Modal BTS -->
+	<div class="modal fade" id="modalBTS" tabindex="-1" aria-labelledby="modalBTSLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered modal-lg">
+		<div class="modal-content rounded-4">
+		  <div class="modal-header border-0">
+			<h5 class="modal-title fw-semibold" id="modalBTSLabel">🎓 BTS Systèmes Numériques - Lycée Langevin Wallon</h5>
+			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+		  </div>
+		  <div class="modal-body px-4">
+			<p><strong>📆 sept. 2017 - juil. 2019 | Niveau : Admis</strong></p>
+			<p><strong>🧑‍💻 Langages étudiés :</strong></p>
+			<ul>
+			  <li>C / C++</li>
+			  <li>Java, Javascript</li>
+			  <li>Python</li>
+			  <li>PHP, HTML, CSS, SCSS</li>
+			</ul>
+			<p><strong>🚀 Projets annuels :</strong></p>
+			<ul>
+			  <li>Création d'un jeu sur un site web en HTML&CSS et JavaScript</li>
+			  <li>Création d'une application mobile pour contrôler un robot avec Arduino</li>
+			</ul>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	
+	<!-- Modal Simplon -->
+	<div class="modal fade" id="modalSimplon" tabindex="-1" aria-labelledby="modalSimplonLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered modal-lg">
+		<div class="modal-content rounded-4">
+		  <div class="modal-header border-0">
+			<h5 class="modal-title fw-semibold" id="modalSimplonLabel">📱 Apple Foundation Program - Simplon</h5>
+			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+		  </div>
+		  <div class="modal-body px-4">
+			<p><strong>📆 nov. 2022 - mars 2023</strong></p>
+			<ul>
+			  <li>Phase de recherche, travail en équipe</li>
+			  <li>Conception complète d’un prototype d’application mobile iOS</li>
+			  <li>Notions apprises : CoreData, Networking, FileManager, UserDefault, Class, Extension</li>
+			  <li>Acquisition des bases de l’UX design et des Human Interface Guidelines d’Apple</li>
+			  <li>Maquettage et développement en Swift avec Xcode</li>
+			  <li>Développement de compétences transversales : autonomie, créativité, communication</li>
+			</ul>
+			<p><strong>🛠 Compétences :</strong> Git · Xcode · Swift · iOS Development</p>
+		  </div>
+		</div>
+	  </div>
+	</div>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
-<!-- Modal De Rijke -->Support 
-<div class="modal fade" id="modalDerijke" tabindex="-1" aria-labelledby="modalDerijkeLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-lg">
-    <div class="modal-content rounded-4">
-      <div class="modal-header">
-        <h5 class="modal-title" id="modalDerijkeLabel">Technicienne Support Applicatif - <img src="img/derijke-logo.png" alt="Logo DeRijke" style="width: 200px;"></h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
-      </div>
-      <div class="modal-body">
-        <p><strong>Période :</strong> 06/2023 - Aujourd’hui</p>
-        <ul>
-          <li>Gestion des demandes utilisateurs liées au TMS</li>
-          <li>Paramétrage et adaptation de l’outil selon les besoins métiers</li>
-          <li>Support fonctionnel et accompagnement des utilisateurs</li>
-          <li>Collaboration avec les équipes métiers pour optimiser les processus</li>
-        </ul>
-        <p><strong>Projets réalisés :</strong></p>
-        <ul>
-          <li>Dématérialisation des factures</li>
-          <li>Intégration d’une IA pour la saisie automatisée des commandes</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Modal Sacem -->
-<div class="modal fade" id="modalSacem" tabindex="-1" aria-labelledby="modalSacemLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-lg">
-    <div class="modal-content rounded-4">
-      <div class="modal-header">
-        <h5 class="modal-title" id="modalSacemLabel">Technicienne Support Applicatif N2 - <img src="img/sacem-logo.png" alt="Logo SACEM" style="width: 100px;"></h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
-      </div>
-      <div class="modal-body">
-        <p><strong>Période :</strong> 09/2019 - 08/2021</p>
-        <ul>
-          <li>Support niveau 2 sur EasyVista</li>
-          <li>Administration des outils EasyVista (Manager, Apps)</li>
-          <li>Gestion des incidents, demandes de service et droits applicatifs</li>
-          <li>Mise à jour vers EasyVista Oxygen (portails, dashboards)</li>
-          <li>Passage de l’environnement EasyVista en mode SaaS</li>
-          <li>Création et modification de tableaux de bord et portails</li>
-          <li>Maintenance applicative et gestion de la base de données</li>
-          <li>Formation des utilisateurs</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Modal RATP -->
-<div class="modal fade" id="modalRatp" tabindex="-1" aria-labelledby="modalRatpLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-lg">
-    <div class="modal-content rounded-4">
-      <div class="modal-header">
-        <h5 class="modal-title" id="modalRatpLabel">Développeuse Web - <img src="img/ratp-logo.png" alt="Logo RATP" style="width: 50px;"></h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
-      </div>
-      <div class="modal-body">
-        <p><strong>Période :</strong> 05/2018 - 07/2018</p>
-        <ul>
-          <li>Étude du cahier des charges pour développement web</li>
-          <li>Ajout de modules et nouvelles fonctionnalités sur l’interface</li>
-          <li>Paramétrage de l’IDE et tests fonctionnels</li>
-          <li>Développement avec Java & HTML</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
-
-
 </body>
 </html>
