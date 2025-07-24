@@ -76,6 +76,64 @@
 				</div>
 			</div>
 		</div>
+		<!-- CMS from Scratch -->
+		<div class="col-md-6 col-lg-4">
+			<div class="card h-100 shadow-sm border-0 rounded-4 d-flex flex-column">
+				<div class="card-body d-flex flex-column">
+					<div class="d-flex align-items-center mb-3">
+						<img src="img/cms-logo.png" alt="Logo CMS" style="height: 50px;" class="me-2">
+						<h5 class="card-title mb-0">CMS from Scratch</h5>
+					</div>
+					<p class="card-text flex-grow-1">Prototype de CMS développé sans framework, inspiré de WordPress.</p>
+					<div>
+					<button class="btn btn-outline-dark btn-sm mt-auto" data-bs-toggle="modal" data-bs-target="#modalCMS">En savoir plus</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Mario Kart IRL -->
+		<div class="col-md-6 col-lg-4">
+			<div class="card h-100 shadow-sm border-0 rounded-4 d-flex flex-column">
+				<div class="card-body d-flex flex-column">
+					<div class="d-flex align-items-center mb-3">
+						<img src="img/kart-logo.png" alt="Logo Kart" style="height: 50px;" class="me-2">
+						<h5 class="card-title mb-0">Mario Kart IRL</h5>
+					</div>
+					<p class="card-text flex-grow-1">Application Android pour piloter un robot Arduino en temps réel.</p>
+					<div>
+					<button class="btn btn-outline-dark btn-sm mt-auto" data-bs-toggle="modal" data-bs-target="#modalKart">En savoir plus</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- App gestion de formations -->
+		<div class="col-md-6 col-lg-4">
+			<div class="card h-100 shadow-sm border-0 rounded-4 d-flex flex-column">
+				<div class="card-body d-flex flex-column">
+					<div class="d-flex align-items-center mb-3">
+						<img src="img/ratp-logo.png" alt="Logo RATP" style="height: 50px;" class="me-2">
+						<h5 class="card-title mb-0">FormSched</h5>
+					</div>
+					<p class="card-text flex-grow-1">Application web pour la gestion des formations durant mon stage à la RATP.</p>
+					<div>
+					<button class="btn btn-outline-dark btn-sm mt-auto" data-bs-toggle="modal" data-bs-target="#modalRATP">En savoir plus</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Jeu plateforme 2D -->
+		<div class="col-md-6 col-lg-4">
+			<div class="card h-100 shadow-sm border-0 rounded-4 d-flex flex-column">
+				<div class="card-body d-flex flex-column">
+					<div class="d-flex align-items-center mb-3">
+						<img src="img/pixelrun-logo.png" alt="Logo PixelRun" style="height: 50px;" class="me-2">
+						<h5 class="card-title mb-0">Pixel Run</h5>
+					</div>
+					<p class="card-text flex-grow-1">Jeu de plateforme en 2D HTML/CSS/JavaScript où le joueur collecte des pièces pour atteindre la sortie.</p>
+				</div>
+			</div>
+		</div>
+	</div>
 	</div>
 </main>
 
@@ -223,6 +281,65 @@
         </ul>
       </div>
     </div>
+  </div>
+</div>
+<!-- Modal CMS -->
+<div class="modal fade" id="modalCMS" tabindex="-1" aria-labelledby="modalCMSLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+	<div class="modal-content rounded-4">
+	  <div class="modal-header">
+		<h5 class="modal-title" id="modalCMSLabel">CMS from Scratch</h5>
+		<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+	  </div>
+	  <div class="modal-body">
+		<p>Prototype de CMS développé de zéro, sans framework, reprenant les bases d’un système comme WordPress.</p>
+		<ul>
+		  <li>Gestion des utilisateurs avec rôles et validation par email</li>
+		  <li>CRUD sur pages, articles, commentaires modérés</li>
+		  <li>Sitemap, SEO, multi-thèmes, dashboards</li>
+		  <li>Stack : PHP7, HTML5, CSS3, SCSS, jQuery, PhpMailer, Datatables</li>
+		  <li>Versionné avec GitHub, structuré sous Trello, MVC simplifié</li>
+		</ul>
+	  </div>
+	</div>
+  </div>
+</div>
+<!-- Modal MarioKart -->
+<div class="modal fade" id="modalKart" tabindex="-1" aria-labelledby="modalKartLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+	<div class="modal-content rounded-4">
+	  <div class="modal-header">
+		<h5 class="modal-title" id="modalKartLabel">Mario Kart IRL</h5>
+		<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+	  </div>
+	  <div class="modal-body">
+		<p>Application Android développée pour piloter un robot Arduino à distance via un serveur intermédiaire.</p>
+		<ul>
+		  <li>Contrôle par gyroscope du smartphone</li>
+		  <li>Communication temps réel via sockets</li>
+		  <li>Stack : Java, Arduino, Sockets TCP/IP, capteurs gyroscopiques</li>
+		</ul>
+	  </div>
+	</div>
+  </div>
+</div>
+<!-- Modal RATP -->
+<div class="modal fade" id="modalRATP" tabindex="-1" aria-labelledby="modalRATPLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+	<div class="modal-content rounded-4">
+	  <div class="modal-header">
+		<h5 class="modal-title" id="modalRATPLabel">FormSched</h5>
+		<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+	  </div>
+	  <div class="modal-body">
+		<p>Projet de stage à la RATP visant à créer une interface de gestion des formations internes.</p>
+		<ul>
+		  <li>Prise de rendez-vous en ligne</li>
+		  <li>Gestion utilisateurs et plannings</li>
+		  <li>Stack : Java, HTML, CSS, base de données</li>
+		</ul>
+	  </div>
+	</div>
   </div>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
