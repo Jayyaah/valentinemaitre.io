@@ -336,6 +336,12 @@ nav .nav-link:hover {
   font-weight: bold;
 }
 
+@media (max-width: 576px) {
+  .modal-header img {
+    height: 32px !important;
+  }
+}
+
 /* footer */
 footer {
   text-align: center;
