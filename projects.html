@@ -101,17 +101,6 @@
 				</div>
 			</div>
 		</div>
-		<!-- Jeu plateforme 2D -->
-		<div class="col-md-6 col-lg-4">
-			<div class="card h-100 shadow-sm border-0 rounded-4 d-flex flex-column">
-				<div class="card-body d-flex flex-column">
-					<span class="text-muted small mb-1">🌐PHP, HTML, CSS, JS</span>
-					<h5 class="card-title mb-0">Pixel Run</h5>
-					<small class="text-muted">BTS</small>
-					<p class="card-text flex-grow-1" style="margin-top:0.5rem">Jeu de plateforme en 2D HTML/CSS/JavaScript où le joueur collecte des pièces pour atteindre la sortie.</p>
-				</div>
-			</div>
-		</div>
 		<!-- App gestion de formations -->
 		<div class="col-md-6 col-lg-4">
 			<div class="card h-100 shadow-sm border-0 rounded-4 d-flex flex-column">
@@ -165,13 +154,45 @@
 			<li>Personnalisation : customisation de l’interface grâce aux items obtenus</li>
 		</ul>
 
-        <p><strong>🛠️ Technologies utilisées :</strong></p>
+        <p><strong>🧑‍💻 Stack technique :</strong></p>
 		<ul>
 			<li>Swift / SwiftUI</li>
 			<li>MapKit pour la carte interactive</li>
 			<li>Architecture MVVM (modèle-vue-vue modèle)</li>
 			<li>Gestion des données locales</li>
 		</ul>
+
+		<p><strong>📱 Aperçu de l'application :</strong></p>
+		<div id="carouselEasyTravel" class="carousel slide mt-3" data-bs-ride="carousel">
+		  <div class="carousel-inner rounded-3 shadow-sm">
+			<div class="carousel-item active">
+			  <img src="img/passepartout-1.png" class="d-block w-100" alt="Capture 1 EasyTravel">
+			</div>
+			<div class="carousel-item">
+			  <img src="img/passepartout-2.png" class="d-block w-100" alt="Capture 2 EasyTravel">
+			</div>
+			<div class="carousel-item">
+			  <img src="img/passepartout-3.png" class="d-block w-100" alt="Capture 3 EasyTravel">
+			</div>
+			<div class="carousel-item">
+			  <img src="img/passepartout-4.png" class="d-block w-100" alt="Capture 3 EasyTravel">
+			</div>
+			<div class="carousel-item">
+			  <img src="img/passepartout-5.png" class="d-block w-100" alt="Capture 3 EasyTravel">
+			</div>
+			<div class="carousel-item">
+			  <img src="img/passepartout-6.png" class="d-block w-100" alt="Capture 3 EasyTravel">
+			</div>
+		  </div>
+		  <button class="carousel-control-prev" type="button" data-bs-target="#carouselEasyTravel" data-bs-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Précédent</span>
+		  </button>
+		  <button class="carousel-control-next" type="button" data-bs-target="#carouselEasyTravel" data-bs-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Suivant</span>
+		  </button>
+		</div>
       </div>
     </div>
   </div>
@@ -260,7 +281,7 @@
           <li>Interface simple, claire, fluide en HTML/CSS</li>
         </ul>
 
-        <p><strong>🛠️ Technologies utilisées :</strong></p>
+        <p><strong>🧑‍💻 Stack technique :</strong></p>
         <ul>
           <li>PHP (logique serveur)</li>
           <li>MySQL pour la base de données</li>
@@ -280,65 +301,106 @@
 <!-- Modal CMS -->
 <div class="modal fade" id="modalCMS" tabindex="-1" aria-labelledby="modalCMSLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-lg">
-	<div class="modal-content rounded-4">
-	  <div class="modal-header">
-		<h5 class="modal-title" id="modalCMSLabel">CMS from Scratch</h5>
-		<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
-	  </div>
-	  <div class="modal-body">
-	  <p class="mb-3"><strong>Description :</strong><br>
-		<p>Prototype de CMS développé de zéro, sans framework, reprenant les bases d’un système comme WordPress.</p>
-		<ul>
-		  <li>Gestion des utilisateurs avec rôles et validation par email</li>
-		  <li>CRUD sur pages, articles, commentaires modérés</li>
-		  <li>Sitemap, SEO, multi-thèmes, dashboards</li>
-		  <li>Stack : PHP7, HTML5, CSS3, SCSS, jQuery, PhpMailer, Datatables</li>
-		  <li>Versionné avec GitHub, structuré sous Trello, MVC simplifié</li>
-		</ul>
-	  </div>
-	</div>
+    <div class="modal-content rounded-4">
+      <div class="modal-header border-0">
+        <img src="img/cms-logo.png" alt="Logo CMS" style="height: 50px;" class="me-2">
+        <h5 class="modal-title fw-semibold" id="modalCMSLabel">CMS from Scratch</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+      </div>
+      <div class="modal-body px-4">
+        <p class="mb-3"><strong>Description :</strong><br>
+          Prototype de CMS développé de zéro, sans framework, reprenant les bases d’un système comme WordPress.
+        </p>
+
+        <p><strong>📝 Ce que fait le CMS :</strong></p>
+        <ul>
+          <li>Gestion des utilisateurs avec rôles et validation par email</li>
+          <li>CRUD complet sur les pages, articles et commentaires modérés</li>
+          <li>Support du sitemap et des optimisations SEO</li>
+          <li>Thèmes multiples et système de dashboard admin</li>
+        </ul>
+
+        <p><strong>🧑‍💻 Stack technique :</strong></p>
+        <ul>
+          <li>PHP 7 (logique serveur)</li>
+          <li>HTML5 / CSS3 / SCSS pour le front</li>
+          <li>jQuery pour les interactions dynamiques</li>
+          <li>PhpMailer pour l’envoi d’emails</li>
+          <li>Datatables pour les tableaux dynamiques</li>
+        </ul>
+
+        <p><strong>🗂️ Méthodologie :</strong></p>
+        <ul>
+          <li>Versionné avec GitHub</li>
+          <li>Organisation des tâches sous Trello</li>
+          <li>Architecture MVC simplifiée (from scratch)</li>
+        </ul>
+      </div>
+    </div>
   </div>
 </div>
-<!-- Modal MarioKart -->
+<!-- Modal Mario Kart IRL -->
 <div class="modal fade" id="modalKart" tabindex="-1" aria-labelledby="modalKartLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-lg">
-	<div class="modal-content rounded-4">
-	  <div class="modal-header">
-		<h5 class="modal-title" id="modalKartLabel">Mario Kart IRL</h5>
-		<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
-	  </div>
-	  <div class="modal-body">
-	  <p class="mb-3"><strong>Description :</strong><br>
-		<p>Application Android développée pour piloter un robot Arduino à distance via un serveur intermédiaire.</p>
-		<ul>
-		  <li>Contrôle par gyroscope du smartphone</li>
-		  <li>Communication temps réel via sockets</li>
-		  <li>Stack : Java, Arduino, Sockets TCP/IP, capteurs gyroscopiques</li>
-		</ul>
-	  </div>
-	</div>
+    <div class="modal-content rounded-4">
+      <div class="modal-header border-0">
+        <img src="img/kart-logo.png" alt="Logo MarioKart IRL" style="height: 50px;" class="me-2">
+        <h5 class="modal-title fw-semibold" id="modalKartLabel">Mario Kart IRL</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+      </div>
+      <div class="modal-body px-4">
+        <p class="mb-3"><strong>Description :</strong><br>
+          Application Android développée pour piloter un robot Arduino à distance via un serveur intermédiaire.
+        </p>
+
+        <p><strong>🎮 Fonctionnalités principales :</strong></p>
+        <ul>
+          <li>Contrôle par gyroscope du smartphone</li>
+          <li>Communication en temps réel via sockets TCP/IP</li>
+        </ul>
+
+        <p><strong>🧑‍💻 Stack technique :</strong></p>
+        <ul>
+          <li>Java (application Android)</li>
+          <li>Arduino (robot physique)</li>
+          <li>Sockets TCP/IP pour la communication</li>
+          <li>Capteurs gyroscopiques du téléphone</li>
+        </ul>
+      </div>
+    </div>
   </div>
 </div>
-<!-- Modal RATP -->
+<!-- Modal FormSched -->
 <div class="modal fade" id="modalRATP" tabindex="-1" aria-labelledby="modalRATPLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-lg">
-	<div class="modal-content rounded-4">
-	  <div class="modal-header">
-		<h5 class="modal-title" id="modalRATPLabel">FormSched</h5>
-		<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
-	  </div>
-	  <div class="modal-body">
-	  <p class="mb-3"><strong>Description :</strong><br>
-		<p>Projet de stage à la RATP visant à créer une interface de gestion des formations internes.</p>
-		<ul>
-		  <li>Prise de rendez-vous en ligne</li>
-		  <li>Gestion utilisateurs et plannings</li>
-		  <li>Stack : Java, HTML, CSS, base de données</li>
-		</ul>
-	  </div>
-	</div>
+    <div class="modal-content rounded-4">
+      <div class="modal-header border-0">
+        <img src="img/ratp-logo.png" alt="Logo FormSched" style="height: 50px;" class="me-2">
+        <h5 class="modal-title fw-semibold" id="modalRATPLabel">FormSched</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+      </div>
+      <div class="modal-body px-4">
+        <p class="mb-3"><strong>Description :</strong><br>
+          Projet de stage réalisé à la RATP Dev, visant à créer une interface de gestion des formations internes.
+        </p>
+
+        <p><strong>🗓️ Fonctionnalités principales :</strong></p>
+        <ul>
+          <li>Prise de rendez-vous en ligne</li>
+          <li>Gestion des utilisateurs et des plannings</li>
+        </ul>
+
+        <p><strong>🧑‍💻 Stack technique :</strong></p>
+        <ul>
+          <li>Java (backend)</li>
+          <li>HTML / CSS (interface front)</li>
+          <li>Base de données (gestion des sessions et utilisateurs)</li>
+        </ul>
+      </div>
+    </div>
   </div>
 </div>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
   const observer = new MutationObserver(() => {
     document.body.style.paddingRight = '0px';
