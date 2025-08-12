@@ -353,3 +353,143 @@ footer {
   position: relative;
   z-index: 10;
 }
+
+/*Easter Egg Mode*/
+.retro-mode {
+  font-family: "VT323", ui-monospace, SFMono-Regular, Menlo, monospace !important;
+  letter-spacing: .25px;
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: auto;
+
+  background-color: #0b0b0c !important;
+  color: #00ff88 !important;
+
+  /* Variables Bootstrap */
+  --bs-body-bg: #0b0b0c;
+  --bs-body-color: #00ff88;
+  --bs-link-color: #00ff88;
+  --bs-link-hover-color: #00ff88;
+  --bs-border-color: #232328;
+  --bs-card-bg: #0f0f10;
+  --bs-card-border-color: #232328;
+  --bs-modal-bg: #0f0f10;
+  --bs-navbar-color: #00ff88;
+  --bs-navbar-hover-color: #00ff88;
+  --bs-navbar-brand-color: #00ff88;
+  --bs-navbar-brand-hover-color: #00ff88;
+  --bs-btn-color: #00ff88;
+  --bs-btn-border-color: #00ff88;
+  --bs-btn-hover-color: #0b0b0c;
+  --bs-btn-hover-bg: #00ff88;
+  --bs-btn-hover-border-color: #00ff88;
+}
+
+/* Surfaces sombres */
+.retro-mode nav,
+.retro-mode footer,
+.retro-mode .card,
+.retro-mode .modal-content,
+.retro-mode .contact-card,
+.retro-mode .home {
+  background: #0f0f10 !important;
+  border: 1px solid #232328 !important;
+  box-shadow: none !important;
+}
+
+/* Grayscale sur médias seulement */
+.retro-mode img,
+.retro-mode video {
+  filter: grayscale(100%) contrast(1.05) !important;
+}
+
+/* Liens & boutons vert terminal */
+.retro-mode a,
+.retro-mode .nav-link,
+.retro-mode .btn-outline-dark,
+.retro-mode .apple-button-blue {
+  color: #00ff88 !important;
+  border-color: #00ff88 !important;
+}
+.retro-mode .btn-outline-dark:hover,
+.retro-mode .apple-button-blue:hover {
+  background: #00ff88 !important;
+  color: #0b0b0c !important;
+  border-color: #00ff88 !important;
+}
+
+/* Titres avec aberration RVB */
+.retro-mode h1,
+.retro-mode h2,
+.retro-mode h3,
+.retro-mode h4,
+.retro-mode h5 {
+  color: #00ff88 !important;
+  text-shadow:
+    1px 0   0 #ff0044,
+   -1px 0   0 #00f7ff,
+    0   .5px 0 #00ff88;
+  letter-spacing: .5px;
+}
+
+/* Effet CRT : scanlines + vignette */
+.retro-mode::before,
+.retro-mode::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 2147483000;
+}
+
+@keyframes crt-flicker {
+  0%{opacity:.96} 2%{opacity:1} 50%{opacity:.98} 52%{opacity:1} 100%{opacity:.97}
+}
+.retro-mode::before {
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(255,255,255,.03) 0px,
+    rgba(255,255,255,.03) 1px,
+    transparent 2px,
+    transparent 3px
+  );
+  mix-blend-mode: overlay;
+  animation: crt-flicker 2.2s infinite ease-in-out;
+}
+.retro-mode::after {
+  background:
+    radial-gradient(120% 100% at 50% 50%,
+      rgba(0,0,0,0) 60%,
+      rgba(0,0,0,.25) 100%),
+    linear-gradient(to right,
+      rgba(255,0,70,.04),
+      rgba(0,255,200,.04)
+    );
+}
+
+/* Courbure d’écran */
+.retro-mode main,
+.retro-mode .modal-dialog {
+  transform: perspective(1200px) translateZ(0) scale(1.002) rotateX(.4deg);
+  transform-origin: center top;
+}
+
+/* Micro-glitch titres */
+@keyframes glitch {
+  0%   { transform: translate(0) skewX(0deg); }
+  15%  { transform: translate(-1px,  .5px) skewX(3deg); }
+  16%  { transform: translate( 1.5px,-.5px) skewX(-3deg); }
+  17%  { transform: translate(0) skewX(0deg); }
+  60%  { text-shadow: 2px 0 0 #ff0044, -2px 0 0 #00f7ff; }
+  100% { text-shadow: 1px 0 0 #ff0044, -1px 0 0 #00f7ff; }
+}
+.retro-mode h1:hover,
+.retro-mode h2:hover,
+.retro-mode h3:hover { animation: glitch 400ms steps(2,end) 1; }
+
+/* Curseur terminal */
+.retro-mode * { cursor: crosshair !important; }
+
+/* Modales rétro sur mobile */
+@media (max-width: 576px){
+  .retro-mode .modal-header img { height: 28px !important; }
+}
