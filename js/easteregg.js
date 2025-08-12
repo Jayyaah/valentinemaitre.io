@@ -1,5 +1,4 @@
 // Konami Code: ↑ ↑ ↓ ↓ ← → ← → B A
-// Konami Code: ↑ ↑ ↓ ↓ ← → ← → B A
 (function () {
   const SEQ = [
     'ArrowUp','ArrowUp','ArrowDown','ArrowDown',
@@ -8,7 +7,24 @@
   ];
   let pos = 0;
 
-  // Helpers
+  // Fonction bip
+  function playBeep() {
+    try {
+      const ctx = new (window.AudioContext || window.webkitAudioContext)();
+      const osc = ctx.createOscillator();
+      const gain = ctx.createGain();
+      osc.type = 'square';
+      osc.frequency.value = 800; // Hz
+      gain.gain.setValueAtTime(0.05, ctx.currentTime); // volume bas
+      osc.connect(gain);
+      gain.connect(ctx.destination);
+      osc.start();
+      osc.stop(ctx.currentTime + 0.15); // durée 150 ms
+    } catch (err) {
+      console.warn('Audio non supporté', err);
+    }
+  }
+
   function applyRetro(on) {
     const html = document.documentElement;
     const body = document.body;
@@ -18,10 +34,9 @@
     console.log('[retro]', on ? 'ON' : 'OFF');
   }
 
-  // Restaure l’état au chargement (utile pour tester sur GitHub Pages)
+  // Restaurer l’état au chargement
   document.addEventListener('DOMContentLoaded', () => {
     if (localStorage.getItem('retro-mode') === '1') applyRetro(true);
-    // Expose des helpers pour tester depuis la console
     window.__retro_on = () => applyRetro(true);
     window.__retro_off = () => applyRetro(false);
     window.__retro_toggle = () => applyRetro(!document.documentElement.classList.contains('retro-mode'));
@@ -33,7 +48,9 @@
     if (key === SEQ[pos]) {
       pos++;
       if (pos === SEQ.length) {
-        applyRetro(!document.documentElement.classList.contains('retro-mode'));
+        const isActive = !document.documentElement.classList.contains('retro-mode');
+        applyRetro(isActive);
+        playBeep();
         pos = 0;
       }
     } else {
