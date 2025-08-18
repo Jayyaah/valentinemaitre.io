@@ -493,3 +493,56 @@ footer {
 @media (max-width: 576px){
   .retro-mode .modal-header img { height: 28px !important; }
 }
+
+.skills-section {
+  max-width: 1000px;
+  margin: 80px auto;
+  padding: 0 20px;
+}
+
+.skills-section h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #111;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+
+.skill-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease;
+  text-align: left;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+}
+
+.skill-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: #444;
+}
+
+.skill-badge {
+  display: inline-block;
+  background: #f2f2f7;
+  color: #333;
+  padding: 6px 12px;
+  border-radius: 12px;
+  margin: 5px;
+  font-size: 0.9rem;
+  transition: background 0.3s ease;
+}
+
+.skill-badge:hover {
+  background: #007aff;
+  color: #fff;
+}
