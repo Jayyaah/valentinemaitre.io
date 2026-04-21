@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jayyaah.github.io/valentinemaitre.io/sitemap.xml
