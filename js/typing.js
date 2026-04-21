@@ -1,4 +1,4 @@
-const text = "Bonjour, je suis Valentine Maître";
+const text = "Valentine Maître";
 const textContent = document.getElementById("textContent");
 const actionDisplay = document.getElementById("actionDisplay");
 let index = 0;
@@ -7,20 +7,14 @@ function typeChar() {
   if (index < text.length) {
     textContent.textContent += text.charAt(index);
     index++;
-    setTimeout(typeChar, 70);
+    setTimeout(typeChar, 80);
   } else {
-    console.log("Texte terminé, affichage boutons...");
-    actionDisplay.classList.add("show"); // déclenche l’opacité en fondu
+    actionDisplay.classList.add("show");
   }
 }
 
 window.onload = () => {
   typeChar();
-
-  document.getElementById("btnParcours").onclick = () => {
-    window.location.href = "about.html";
-  };
-  document.getElementById("btnProjets").onclick = () => {
-    window.location.href = "projects.html";
-  };
+  document.getElementById("btnParcours").onclick = () => { window.location.href = "about.html"; };
+  document.getElementById("btnProjets").onclick  = () => { window.location.href = "projects.html"; };
 };
