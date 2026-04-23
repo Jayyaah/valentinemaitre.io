@@ -1,4 +1,24 @@
 document.addEventListener('DOMContentLoaded', () => {
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('.nav-links .nav-link');
+
+  function updateScrollSpy() {
+    const scrollY = window.scrollY;
+    const offset = 100;
+    let active = null;
+    sections.forEach(section => {
+      if (section.offsetTop - offset <= scrollY) active = section;
+    });
+    navLinks.forEach(link => link.classList.remove('active'));
+    if (active) {
+      const link = document.querySelector(`.nav-links .nav-link[href="#${active.id}"]`);
+      if (link) link.classList.add('active');
+    }
+  }
+
+  window.addEventListener('scroll', updateScrollSpy, { passive: true });
+  updateScrollSpy();
+
   document.querySelectorAll('.project-card').forEach((card, i) => {
     card.style.setProperty('--i', i);
   });
