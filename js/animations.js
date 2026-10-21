@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     const target = document.getElementById(`detail-${id}`);
     if (target) {
-      target.style.display = 'block';
+      target.style.display = 'grid';
       void target.offsetWidth;
       target.classList.add('sel-detail--active');
     }
@@ -82,10 +82,72 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   const filterBtns = document.querySelectorAll('.filter-btn');
+  const gallery = document.querySelector('#projectGallery');
+  const galleryPosition = document.querySelector('#projectGalleryPosition');
+  const galleryProgress = document.querySelector('.project-gallery-progress');
+  const galleryProgressFill = document.querySelector('#projectGalleryProgress');
+  const galleryArrows = document.querySelectorAll('.project-gallery-arrow');
+
+  function updateGalleryStatus() {
+    if (!gallery) return;
+
+    const visibleCards = [...gallery.querySelectorAll('.project-card:not(.filtered-out)')];
+    const total = visibleCards.length;
+    const gap = parseFloat(getComputedStyle(gallery).columnGap) || 0;
+    const cardWidth = visibleCards[0]?.getBoundingClientRect().width || 0;
+    const step = cardWidth + gap;
+    const maxScroll = gallery.scrollWidth - gallery.clientWidth;
+    const current = total
+      ? maxScroll <= 2
+        ? total
+        : Math.min(total, Math.floor((gallery.scrollLeft + gap / 2) / step) + 1)
+      : 0;
+
+    if (galleryPosition) {
+      galleryPosition.textContent = `${String(current).padStart(2, '0')} / ${String(total).padStart(2, '0')}`;
+    }
+    if (galleryProgressFill) {
+      galleryProgressFill.style.width = `${total ? (current / total) * 100 : 0}%`;
+    }
+    if (galleryProgress) {
+      galleryProgress.setAttribute('aria-valuemax', String(total || 1));
+      galleryProgress.setAttribute('aria-valuenow', String(current));
+    }
+    galleryArrows.forEach(arrow => {
+      arrow.disabled = !total || (arrow.dataset.direction === 'previous'
+        ? gallery.scrollLeft <= 2
+        : gallery.scrollLeft >= maxScroll - 2);
+    });
+  }
+
+  if (gallery) {
+    gallery.addEventListener('scroll', updateGalleryStatus, { passive: true });
+    window.addEventListener('resize', updateGalleryStatus);
+    galleryArrows.forEach(arrow => {
+      arrow.addEventListener('click', () => {
+        const firstVisibleCard = gallery.querySelector('.project-card:not(.filtered-out)');
+        if (!firstVisibleCard) return;
+
+        const gap = parseFloat(getComputedStyle(gallery).columnGap) || 0;
+        const direction = arrow.dataset.direction === 'next' ? 1 : -1;
+        const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        gallery.scrollBy({
+          left: direction * (firstVisibleCard.getBoundingClientRect().width + gap),
+          behavior: reducedMotion ? 'auto' : 'smooth'
+        });
+      });
+    });
+    updateGalleryStatus();
+  }
+
   filterBtns.forEach(btn => {
     btn.addEventListener('click', () => {
-      filterBtns.forEach(b => b.classList.remove('active'));
+      filterBtns.forEach(b => {
+        b.classList.remove('active');
+        b.setAttribute('aria-pressed', 'false');
+      });
       btn.classList.add('active');
+      btn.setAttribute('aria-pressed', 'true');
 
       const f = btn.dataset.filter;
 
@@ -105,6 +167,8 @@ document.addEventListener('DOMContentLoaded', () => {
           card.classList.add('filtered-out');
         }
       });
+      if (gallery) gallery.scrollTo({ left: 0, behavior: 'auto' });
+      updateGalleryStatus();
     });
   });
 });
