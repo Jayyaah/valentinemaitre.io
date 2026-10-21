@@ -100,20 +100,56 @@
     
     <section id="accueil" class="hero">
       <div class="hero-inner">
-        <h1 class="hero-name">Valentine Maître</h1>
-        <p class="hero-role">Analyste Support Web &amp; Développeuse iOS</p>
-        <p class="hero-bio">Passionnée par la création d'applications fluides, esthétiques et utiles. J'aime explorer l'écosystème Apple, concevoir des interfaces soignées et apprendre en continu de nouvelles technologies.</p>
-        <div class="hero-actions">
-          <a href="#parcours" class="btn-primary-hero">Mon parcours</a>
-          <a href="#projets"  class="btn-secondary-hero">Mes projets</a>
+        <div class="hero-copy">
+          <p class="hero-eyebrow"><span class="hero-status-dot"></span> Support web · Développement iOS</p>
+          <h1 class="hero-name">Valentine <span>Maître</span></h1>
+          <p class="hero-role">La technologie au service d'expériences utiles.</p>
+          <p class="hero-bio">Analyste support web et développeuse iOS, je transforme les idées et les besoins du quotidien en expériences numériques fluides, accessibles et soignées.</p>
+          <div class="hero-actions">
+            <a href="#projets" class="btn-primary-hero">Découvrir mes projets <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a>
+            <a href="#parcours" class="btn-secondary-hero">Mon parcours</a>
+          </div>
+          <div class="hero-social">
+            <a href="https://github.com/Jayyaah" class="social-pill" target="_blank" rel="noopener noreferrer me">
+              <i class="bi bi-github"></i> GitHub
+            </a>
+            <a href="#contact" class="social-pill">
+              <i class="bi bi-envelope"></i> Me contacter
+            </a>
+          </div>
         </div>
-        <div class="hero-social">
-          <a href="https://github.com/Jayyaah" class="social-pill" target="_blank" rel="noopener noreferrer me">
-            <i class="bi bi-github"></i> GitHub
-          </a>
-          <a href="#contact" class="social-pill">
-            <i class="bi bi-envelope"></i> Contact
-          </a>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="hero-visual-glow"></div>
+          <div class="hero-code-card">
+            <div class="hero-code-topbar">
+              <span class="hero-window-dots"><i></i><i></i><i></i></span>
+              <span>ContentView.swift</span>
+              <i class="bi bi-three-dots"></i>
+            </div>
+            <div class="hero-code">
+              <span class="code-line"><b>01</b><span><em>struct</em> ContentView: View {</span></span>
+              <span class="code-line"><b>02</b><span>&nbsp;&nbsp;<em>var</em> body: some View {</span></span>
+              <span class="code-line"><b>03</b><span>&nbsp;&nbsp;&nbsp;&nbsp;VStack(spacing: <i>16</i>) {</span></span>
+              <span class="code-line"><b>04</b><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Text(<strong>"Une idée."</strong>)</span></span>
+              <span class="code-line"><b>05</b><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Text(<strong>"Une belle expérience."</strong>)</span></span>
+              <span class="code-line"><b>06</b><span>&nbsp;&nbsp;&nbsp;&nbsp;}</span></span>
+              <span class="code-line"><b>07</b><span>&nbsp;&nbsp;}</span></span>
+              <span class="code-line"><b>08</b><span>}</span></span>
+            </div>
+            <div class="hero-code-footer">
+              <span><i class="bi bi-check-circle-fill"></i> Prête à donner vie aux idées</span>
+              <span>SwiftUI</span>
+            </div>
+          </div>
+          <div class="hero-float-card hero-float-card--top">
+            <span class="hero-float-icon"><i class="bi bi-phone"></i></span>
+            <span><strong>Développement iOS</strong><small>Swift · SwiftUI</small></span>
+          </div>
+          <div class="hero-float-card hero-float-card--bottom">
+            <span class="hero-float-icon hero-float-icon--support"><i class="bi bi-chat-dots"></i></span>
+            <span><strong>Support applicatif</strong><small>Comprendre · Résoudre</small></span>
+          </div>
         </div>
       </div>
       <a href="#parcours" class="scroll-hint">
@@ -125,7 +161,11 @@
     
     <section id="parcours" class="section">
       <div class="section-content">
-        <h2 class="section-title reveal">Mon Parcours</h2>
+        <div class="section-heading reveal">
+          <span class="section-kicker"><i class="bi bi-stars" aria-hidden="true"></i> À propos</span>
+          <h2 class="section-title">Un parcours entre technique et humain</h2>
+          <p class="section-intro">Du support applicatif au développement iOS, j'aime comprendre les besoins et trouver des solutions qui font la différence.</p>
+        </div>
 
         
         <div class="parcours-selector reveal">
@@ -136,8 +176,9 @@
               <button class="sel-tab active" data-group="exp"><i class="bi bi-briefcase-fill"></i> Expériences</button>
               <button class="sel-tab" data-group="form"><i class="bi bi-mortarboard-fill"></i> Formations</button>
             </div>
+            <p class="journey-hint"><i class="bi bi-arrow-down-left-circle" aria-hidden="true"></i> Choisissez une étape pour en découvrir les coulisses</p>
 
-            <div class="sel-items" data-group="exp">
+            <div class="sel-items journey-track" data-group="exp">
               <button class="sel-item active" data-id="oasis">
                 <img src="img/oasis-logo.jpeg" alt="Oasis" class="sel-logo">
                 <div class="sel-meta">
@@ -172,7 +213,7 @@
               </button>
             </div>
 
-            <div class="sel-items sel-items--hidden" data-group="form">
+            <div class="sel-items journey-track sel-items--hidden" data-group="form">
               <button class="sel-item" data-id="simplon">
                 <img src="img/simplon-logo.png" alt="Simplon" class="sel-logo">
                 <div class="sel-meta">
@@ -333,23 +374,56 @@
 
         
         <div class="skills-section">
-          <h3 class="section-label reveal"><i class="bi bi-cpu-fill"></i> Compétences</h3>
+          <div class="skills-heading reveal">
+            <span class="section-kicker"><i class="bi bi-cpu-fill" aria-hidden="true"></i> Mon savoir-faire</span>
+            <h3>Des compétences au service des projets</h3>
+          </div>
           <div class="skills-grid reveal">
-            <span class="skill-pill skill-ios">Swift</span>
-            <span class="skill-pill skill-ios">SwiftUI</span>
-            <span class="skill-pill skill-ios">iOS Development</span>
-            <span class="skill-pill skill-ios">Xcode</span>
-            <span class="skill-pill skill-ios">MapKit</span>
-            <span class="skill-pill skill-web">PHP</span>
-            <span class="skill-pill skill-web">HTML / CSS</span>
-            <span class="skill-pill skill-web">JavaScript</span>
-            <span class="skill-pill skill-web">MySQL</span>
-            <span class="skill-pill skill-java">Java</span>
-            <span class="skill-pill skill-tool">Git / GitHub</span>
-            <span class="skill-pill skill-tool">Figma</span>
-            <span class="skill-pill skill-tool">EasyVista</span>
-            <span class="skill-pill skill-tool">Méthodologie Agile</span>
-            <span class="skill-pill skill-tool">Ticketing</span>
+            <div class="skill-group skill-group--ios">
+              <div class="skill-group-top">
+                <span class="skill-group-icon"><i class="bi bi-phone" aria-hidden="true"></i></span>
+                <span class="skill-group-index">01 <i class="bi bi-arrow-up-right" aria-hidden="true"></i></span>
+              </div>
+              <h4>Développement iOS</h4>
+              <p class="skill-group-description">Imaginer et prototyper des expériences pour l'écosystème Apple.</p>
+              <div class="skill-group-pills">
+                <span class="skill-pill skill-ios">Swift</span>
+                <span class="skill-pill skill-ios">SwiftUI</span>
+                <span class="skill-pill skill-ios">iOS Development</span>
+                <span class="skill-pill skill-ios">Xcode</span>
+                <span class="skill-pill skill-ios">MapKit</span>
+              </div>
+            </div>
+            <div class="skill-group skill-group--web">
+              <div class="skill-group-top">
+                <span class="skill-group-icon"><i class="bi bi-code-slash" aria-hidden="true"></i></span>
+                <span class="skill-group-index">02 <i class="bi bi-arrow-up-right" aria-hidden="true"></i></span>
+              </div>
+              <h4>Développement web</h4>
+              <p class="skill-group-description">Construire des projets web, de l'interface à la base de données.</p>
+              <div class="skill-group-pills">
+                <span class="skill-pill skill-web">PHP</span>
+                <span class="skill-pill skill-web">HTML / CSS</span>
+                <span class="skill-pill skill-web">JavaScript</span>
+                <span class="skill-pill skill-web">MySQL</span>
+                <span class="skill-pill skill-java">Java</span>
+              </div>
+            </div>
+            <div class="skill-group skill-group--tools">
+              <div class="skill-group-top">
+                <span class="skill-group-icon"><i class="bi bi-tools" aria-hidden="true"></i></span>
+                <span class="skill-group-index">03 <i class="bi bi-arrow-up-right" aria-hidden="true"></i></span>
+              </div>
+              <h4>Outils &amp; méthodes</h4>
+              <p class="skill-group-description">Collaborer, organiser le travail et accompagner les utilisateurs.</p>
+              <div class="skill-group-pills">
+                <span class="skill-pill skill-tool">Git / GitHub</span>
+                <span class="skill-pill skill-tool">Figma</span>
+                <span class="skill-pill skill-tool">EasyVista</span>
+                <span class="skill-pill skill-tool">Méthodologie Agile</span>
+                <span class="skill-pill skill-tool">Ticketing</span>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -359,20 +433,43 @@
     
     <section id="projets" class="section">
       <div class="section-content">
-        <h2 class="section-title reveal">Mes Projets</h2>
-
-        <div class="project-filters reveal">
-          <button class="filter-btn active" data-filter="all">Tout</button>
-          <button class="filter-btn" data-filter="ios">iOS</button>
-          <button class="filter-btn" data-filter="web">Web</button>
-          <button class="filter-btn" data-filter="android">Android</button>
-          <button class="filter-btn" data-filter="java">Java</button>
+        <div class="section-heading reveal">
+          <span class="section-kicker"><i class="bi bi-lightning-charge" aria-hidden="true"></i> Le laboratoire</span>
+          <h2 class="section-title">Des idées devenues projets</h2>
+          <p class="section-intro">Du premier croquis à l'expérience interactive, chaque projet est un terrain de jeu pour apprendre, expérimenter et donner vie aux idées.</p>
         </div>
 
-        <div class="projects-grid">
+        <div class="project-filters reveal">
+          <span class="project-filter-label"><i class="bi bi-sliders2" aria-hidden="true"></i> Explorer par univers</span>
+          <div class="project-filter-options" role="group" aria-label="Filtrer les projets par technologie">
+            <button class="filter-btn active" data-filter="all" aria-pressed="true">Tout</button>
+            <button class="filter-btn" data-filter="ios" aria-pressed="false">iOS</button>
+            <button class="filter-btn" data-filter="web" aria-pressed="false">Web</button>
+            <button class="filter-btn" data-filter="android" aria-pressed="false">Android</button>
+            <button class="filter-btn" data-filter="java" aria-pressed="false">Java</button>
+          </div>
+        </div>
+
+        <div class="project-gallery-controls">
+          <span><i class="bi bi-arrows" aria-hidden="true"></i> Faites défiler pour explorer</span>
+          <div class="project-gallery-arrows">
+            <button class="project-gallery-arrow" type="button" data-direction="previous" aria-label="Projet précédent">
+              <i class="bi bi-arrow-left" aria-hidden="true"></i>
+            </button>
+            <button class="project-gallery-arrow" type="button" data-direction="next" aria-label="Projet suivant">
+              <i class="bi bi-arrow-right" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="projects-grid" id="projectGallery" tabindex="0" aria-label="Galerie de projets">
 
           <div class="project-card" data-cat="ios">
             <div class="project-card-accent"></div>
+            <div class="project-preview project-preview--device">
+              <img src="img/passepartout-1.png" alt="" loading="lazy">
+              <span class="project-preview-label"><i class="bi bi-geo-alt-fill" aria-hidden="true"></i> Culture en mouvement</span>
+            </div>
             <div class="project-card-body">
               <span class="project-tech">Swift / SwiftUI</span>
               <h5 class="project-title">Passe P'Art Où</h5>
@@ -389,6 +486,10 @@
 
           <div class="project-card" data-cat="ios">
             <div class="project-card-accent"></div>
+            <div class="project-preview project-preview--device project-preview--travel">
+              <img src="img/easytravel-1.png" alt="" loading="lazy">
+              <span class="project-preview-label"><i class="bi bi-airplane-fill" aria-hidden="true"></i> Votre prochaine aventure</span>
+            </div>
             <div class="project-card-body">
               <span class="project-tech">Swift / SwiftUI</span>
               <h5 class="project-title">EasyTravel</h5>
@@ -405,6 +506,10 @@
 
           <div class="project-card" data-cat="web">
             <div class="project-card-accent"></div>
+            <div class="project-preview">
+              <img src="img/gamepicker-1.png" alt="" loading="lazy">
+              <span class="project-preview-label"><i class="bi bi-dice-5-fill" aria-hidden="true"></i> À quoi on joue ?</span>
+            </div>
             <div class="project-card-body">
               <span class="project-tech">PHP / MySQL</span>
               <h5 class="project-title">GamePicker</h5>
@@ -421,6 +526,10 @@
 
           <div class="project-card" data-cat="web">
             <div class="project-card-accent"></div>
+            <div class="project-preview">
+              <img src="img/tradecoin-1.png" alt="" loading="lazy">
+              <span class="project-preview-label"><i class="bi bi-window-stack" aria-hidden="true"></i> CMS développé sur mesure</span>
+            </div>
             <div class="project-card-body">
               <span class="project-tech">PHP / HTML / CSS</span>
               <h5 class="project-title">TradeCoin — CMS from Scratch</h5>
@@ -434,6 +543,10 @@
 
           <div class="project-card" data-cat="android">
             <div class="project-card-accent"></div>
+            <div class="project-preview project-preview--icon project-preview--kart">
+              <i class="bi bi-controller" aria-hidden="true"></i>
+              <span class="project-preview-label">Du mobile au monde réel</span>
+            </div>
             <div class="project-card-body">
               <span class="project-tech">Android / Java</span>
               <h5 class="project-title">Mario Kart IRL</h5>
@@ -447,6 +560,10 @@
 
           <div class="project-card" data-cat="java">
             <div class="project-card-accent"></div>
+            <div class="project-preview project-preview--icon project-preview--ratp">
+              <i class="bi bi-calendar2-week" aria-hidden="true"></i>
+              <span class="project-preview-label">Planifier simplement</span>
+            </div>
             <div class="project-card-body">
               <span class="project-tech">Java / HTML / CSS</span>
               <h5 class="project-title">FormSched</h5>
@@ -459,17 +576,31 @@
           </div>
 
         </div>
+        <div class="project-gallery-footer">
+          <div class="project-gallery-progress" role="progressbar" aria-label="Progression dans les projets" aria-valuemin="1" aria-valuemax="6" aria-valuenow="1">
+            <span id="projectGalleryProgress"></span>
+          </div>
+          <span class="project-gallery-position" id="projectGalleryPosition" aria-live="polite">01 <i></i> 06</span>
+        </div>
       </div>
     </section>
 
     
     <section id="contact" class="contact-section">
       <div class="contact-header reveal">
-        <h2 class="section-title" style="margin-bottom:0.5rem">Contactez-moi</h2>
-        <p style="color:var(--text-sub);margin:0">Une question, une opportunité ? Écrivez-moi.</p>
+        <span class="section-kicker"><i class="bi bi-chat-heart" aria-hidden="true"></i> Et maintenant ?</span>
+        <h2 class="section-title">Faisons connaissance</h2>
+        <p>Une question, une idée ou une opportunité ?<br>Je serais ravie d'en discuter avec vous.</p>
       </div>
 
       <div class="contact-card glass-card reveal">
+        <div class="contact-card-heading">
+          <span class="contact-card-icon"><i class="bi bi-envelope-paper" aria-hidden="true"></i></span>
+          <div>
+            <h3>Envoyez-moi un message</h3>
+            <p>Je vous répondrai dès que possible.</p>
+          </div>
+        </div>
         <form id="contactForm" action="https://formspree.io/f/xkgznkna" method="POST">
           <div class="mb-3">
             <label for="email" class="form-label">Votre email</label>
@@ -479,8 +610,8 @@
             <label for="message" class="form-label">Votre message</label>
             <textarea class="form-control" id="message" name="message" rows="5" placeholder="Bonjour Valentine..." required></textarea>
           </div>
-          <button type="submit" class="btn-glass w-100" style="justify-content:center;padding:0.65rem 1rem">
-            <i class="bi bi-send me-2"></i>Envoyer
+          <button type="submit" class="btn-glass contact-submit w-100">
+            Envoyer mon message <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
           </button>
         </form>
         <div id="formResponseWrapper">
